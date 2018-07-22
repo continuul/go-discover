@@ -14,6 +14,7 @@ import (
 	"github.com/hashicorp/go-discover/provider/azure"
 	"github.com/hashicorp/go-discover/provider/digitalocean"
 	"github.com/hashicorp/go-discover/provider/gce"
+	"github.com/continuul/go-discover-kubernetes/provider/kubernetes"
 	"github.com/hashicorp/go-discover/provider/os"
 	"github.com/hashicorp/go-discover/provider/packet"
 	"github.com/hashicorp/go-discover/provider/scaleway"
@@ -47,6 +48,7 @@ var Providers = map[string]Provider{
 	"azure":        &azure.Provider{},
 	"digitalocean": &digitalocean.Provider{},
 	"gce":          &gce.Provider{},
+	"kubernetes":   &kubernetes.Provider{},
 	"os":           &os.Provider{},
 	"scaleway":     &scaleway.Provider{},
 	"softlayer":    &softlayer.Provider{},
